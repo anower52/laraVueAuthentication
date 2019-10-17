@@ -24,7 +24,7 @@
                 <router-link to="/login" class="dropdown-item">Login</router-link>
                 <router-link to="/register" class="dropdown-item">Register</router-link>
             </div>
-
+            
             <a v-else @click="logout" href="javascript:;" class="dropdown-item">Logout</a>
 
         </div>

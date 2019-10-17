@@ -1,9 +1,9 @@
 <template>
     <div>
-    <navbar :app="this"></navbar>
+    <navbar :app="this" class="mb-2"></navbar>
     <spinner v-if="loading"></spinner>
         <div v-else-if="initiated">
-            <router-view/>
+            <router-view :app="this"/>
         </div>
     </div>
 </template>
@@ -26,6 +26,10 @@ import Navbar from './components/Navbar';
                 })
             }
         },
+        
+        mounted(){
+            this.init();
+        },
         methods: {
         
             init(){
@@ -33,7 +37,7 @@ import Navbar from './components/Navbar';
                 this.loading = true;
 
                 this.req.get('auth/init').then(response =>{
-                    this.user = response.data;
+                    this.user = response.data.user;
                     this.loading = false;
                     this.initiated = true;
                 })
