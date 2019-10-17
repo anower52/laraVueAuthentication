@@ -17,7 +17,7 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{ app.user ? app.user.name: 'Anower'}}
+          {{ app.user ? app.user.name: 'ACCOUNT'}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div v-if="!app.user">

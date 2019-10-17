@@ -82,7 +82,7 @@
                     const data = {
                         name: this.name,
                         username: this.username,
-                        passwor: this.password
+                        password: this.password
                     }
                     this.app.req.post("auth/register" , data).then(response=>{
                         this.app.user = response.data;
