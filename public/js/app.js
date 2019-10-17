@@ -2058,7 +2058,7 @@ __webpack_require__.r(__webpack_exports__);
         this.errors.push('Confirm Password is Required');
       }
 
-      if (this.passwor !== this.passwordAgain) {
+      if (this.password !== this.passwordAgain) {
         this.errors.push('Password do not match');
       }
 
@@ -37713,7 +37713,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Password......" },
+                  attrs: { type: "password", placeholder: "Password......" },
                   domProps: { value: _vm.password },
                   on: {
                     input: function($event) {
@@ -37740,7 +37740,7 @@ var render = function() {
                   ],
                   staticClass: "form-control",
                   attrs: {
-                    type: "text",
+                    type: "password",
                     placeholder: "Confirm Password......"
                   },
                   domProps: { value: _vm.passwordAgain },

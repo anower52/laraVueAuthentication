@@ -26,11 +26,11 @@
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="text" class="form-control" placeholder="Password......" v-model="password">
+                            <input type="password" class="form-control" placeholder="Password......" v-model="password">
                         </div>
                         <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="text" class="form-control" placeholder="Confirm Password......" v-model="passwordAgain">
+                            <input type="password" class="form-control" placeholder="Confirm Password......" v-model="passwordAgain">
                         </div>
                         <button class="btn-btn-success">Register</button>
                     </form>
@@ -73,7 +73,7 @@
                 {
                     this.errors.push('Confirm Password is Required');
                 }
-                if(this.passwor !== this.passwordAgain)
+                if(this.password !== this.passwordAgain)
                 {
                     this.errors.push('Password do not match');
                 }
