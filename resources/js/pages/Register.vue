@@ -32,7 +32,7 @@
                             <label>Confirm Password</label>
                             <input type="password" class="form-control" placeholder="Confirm Password......" v-model="passwordAgain">
                         </div>
-                        <button class="btn-btn-success">Register</button>
+                        <button class="btn btn-success">Register</button>
                     </form>
                 </div>
             </div>

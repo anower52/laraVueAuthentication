@@ -1,7 +1,7 @@
 <template>
     <div class="container">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Lara Vue Authentication</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" 
     data-target="#navbarSupportedContent">

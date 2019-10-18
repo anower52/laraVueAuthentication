@@ -1969,7 +1969,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'navbar',
+  props: ['app'],
+  data: function data() {
+    return {};
+  }
+});
 
 /***/ }),
 
@@ -37510,110 +37525,106 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c(
-      "nav",
-      { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
-      [
-        _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-          _vm._v("Lara Vue Authentication")
-        ]),
-        _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "collapse navbar-collapse",
-            attrs: { id: "navbarSupportedContent" }
-          },
-          [
-            _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/" } },
-                    [_vm._v("Home ")]
-                  )
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-              _c("li", { staticClass: "nav-item dropdown" }, [
+    _c("nav", { staticClass: "navbar navbar-expand-lg navbar-dark bg-dark" }, [
+      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+        _vm._v("Lara Vue Authentication")
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse navbar-collapse",
+          attrs: { id: "navbarSupportedContent" }
+        },
+        [
+          _c("ul", { staticClass: "navbar-nav mr-auto" }, [
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
                 _c(
-                  "a",
-                  {
-                    staticClass: "nav-link dropdown-toggle",
-                    attrs: {
-                      href: "#",
-                      id: "navbarDropdown",
-                      role: "button",
-                      "data-toggle": "dropdown",
-                      "aria-haspopup": "true",
-                      "aria-expanded": "false"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n          " +
-                        _vm._s(_vm.app.user ? _vm.app.user.name : "ACCOUNT") +
-                        "\n        "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "navbarDropdown" }
-                  },
-                  [
-                    !_vm.app.user
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "router-link",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { to: "/login" }
-                              },
-                              [_vm._v("Login")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "router-link",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { to: "/register" }
-                              },
-                              [_vm._v("Register")]
-                            )
-                          ],
-                          1
-                        )
-                      : _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "javascript:;" },
-                            on: { click: _vm.logout }
-                          },
-                          [_vm._v("Logout")]
-                        )
-                  ]
+                  "router-link",
+                  { staticClass: "nav-link", attrs: { to: "/" } },
+                  [_vm._v("Home ")]
                 )
-              ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "navbar-nav ml-auto" }, [
+            _c("li", { staticClass: "nav-item dropdown" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link dropdown-toggle",
+                  attrs: {
+                    href: "#",
+                    id: "navbarDropdown",
+                    role: "button",
+                    "data-toggle": "dropdown",
+                    "aria-haspopup": "true",
+                    "aria-expanded": "false"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n          " +
+                      _vm._s(_vm.app.user ? _vm.app.user.name : "ACCOUNT") +
+                      "\n        "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "dropdown-menu",
+                  attrs: { "aria-labelledby": "navbarDropdown" }
+                },
+                [
+                  !_vm.app.user
+                    ? _c(
+                        "div",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: "/login" }
+                            },
+                            [_vm._v("Login")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: "/register" }
+                            },
+                            [_vm._v("Register")]
+                          )
+                        ],
+                        1
+                      )
+                    : _c(
+                        "a",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { href: "javascript:;" },
+                          on: { click: _vm.logout }
+                        },
+                        [_vm._v("Logout")]
+                      )
+                ]
+              )
             ])
-          ]
-        )
-      ]
-    )
+          ])
+        ]
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -37656,24 +37667,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Home")]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card text-center" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _vm._v(
+          "\n    " + _vm._s(_vm.app.user ? _vm.app.user.name : "HOME") + "\n  "
+        )
+      ]),
       _vm._v(" "),
-      _c("h1", [_vm._v("Home")]),
+      _c("div", { staticClass: "card-body" }, [
+        _c("h5", { staticClass: "card-title" }, [
+          _vm._v(_vm._s(_vm.app.user ? _vm.app.user.username : "About Home"))
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "card-text" }, [
+          _vm._v(
+            _vm._s(
+              _vm.app.user
+                ? _vm.app.user.created_at
+                : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+            )
+          )
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "btn btn-primary", attrs: { href: "#" } }, [
+          _vm._v("Go somewhere")
+        ])
+      ]),
       _vm._v(" "),
-      _c("h1", [_vm._v("Home")]),
-      _vm._v(" "),
-      _c("h1", [_vm._v("Home")])
+      _c("div", { staticClass: "card-footer text-muted" }, [
+        _vm._v("\n    2 days ago\n  ")
+      ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -37785,7 +37813,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("button", { staticClass: "btn-btn-success" }, [
+              _c("button", { staticClass: "btn btn-success" }, [
                 _vm._v("Login")
               ])
             ]
@@ -37962,7 +37990,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("button", { staticClass: "btn-btn-success" }, [
+              _c("button", { staticClass: "btn btn-success" }, [
                 _vm._v("Register")
               ])
             ]
